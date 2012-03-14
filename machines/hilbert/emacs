@@ -13,7 +13,6 @@ that uses 'font-lock-warning-face'."
      (1 font-lock-warning-face t))))
 (font-lock-add-keywords 'c++-mode (font-lock-width-keyword 80))
 
-(add-to-list 'load-path "/home/ruggeri/lib/emacs")
 (load-file "~/.elisp-cache-load.elc")
 
 (princ "Load google...")
