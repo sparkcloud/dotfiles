@@ -1,4 +1,4 @@
-export CONF_DIR=~/Dropbox/conf-files
+export CONF_DIR=~/.conf-files
 
 alias dircolors=gdircolors
 export LS=gls
