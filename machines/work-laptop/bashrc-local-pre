@@ -1,0 +1,4 @@
+export CONF_DIR=~/Dropbox/conf-files
+
+alias dircolors=gdircolors
+export LS=gls

@@ -1,0 +1,15 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[user]
+	email = ruggeri@google.com
+	name = Ned Ruggeri
+[core]
+	excludesfile = /Users/ruggeri/.gitignore
+[alias]
+	llog = log --graph --decorate
+[branch]
+	autosetuprebase = always
+[rerere]
+	enabled = 1

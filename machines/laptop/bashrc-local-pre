@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export CONF_DIR=~/dbox/conf-files
+
+alias dircolors=gdircolors
+export LS=gls

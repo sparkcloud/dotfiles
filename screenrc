@@ -1,0 +1,18 @@
+logfile screenlogs/log.%n
+deflog on
+
+defscrollback 50000 # make long scrollback
+
+autodetach on
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string '%{= dK}%-Lw%{= dW}%50>%n%f* %t%{= dK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+
+escape "``"
+
+startup_message off
+
+# so vim/emacs/et al don't clobber your scrollback buffer
+# XXX: current release of screen has a bug; build from src
+altscreen on

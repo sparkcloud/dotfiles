@@ -1,0 +1,21 @@
+(load-file "$CONF_DIR/emacs/emacs-options.el")
+(load-file "$CONF_DIR/emacs/emacs-binds.el")
+
+;; settings to use gtags
+(global-set-key [(?\M-.)] 'gtags-feeling-lucky) ;; equiv: find-tag
+(global-set-key [(?\M-,)] 'gtags-next-tag)      ;; equiv: tags-loop-continue
+(global-set-key [(?\M-*)] 'gtags-pop-tag)       ;; equiv: pop-tag-mark
+
+(defun font-lock-width-keyword (width)
+  "Return a font-lock style keyword for a string beyond width WIDTH
+that uses 'font-lock-warning-face'."
+  `((,(format "^%s\\(.+\\)" (make-string width ?.))
+     (1 font-lock-warning-face t))))
+(font-lock-add-keywords 'c++-mode (font-lock-width-keyword 80))
+
+(add-to-list 'load-path "/home/ruggeri/lib/emacs")
+(load-file "~/.elisp-cache-load.elc")
+
+(princ "Load google...")
+(require 'google)
+(princ " done")

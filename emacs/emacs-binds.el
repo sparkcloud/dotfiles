@@ -1,0 +1,15 @@
+(global-set-key (kbd "C-l") 'goto-line)
+
+(defun backward-kill-line (arg)
+  "Kill chars backward until encountering the end of a line."
+  (interactive "p")
+  (kill-line 0))
+(global-set-key "\C-u" 'backward-kill-line)
+
+(defun print-buffer-path ()
+  (interactive)
+  (princ (concat "buffer path: " buffer-file-name)))
+(global-set-key "\C-f" 'print-buffer-path)
+
+(global-set-key "\C-s" 'isearch-forward-regexp)
+(global-set-key "\C-r" 'isearch-backward-regexp)

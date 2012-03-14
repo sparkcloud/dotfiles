@@ -1,0 +1,13 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[user]
+	email = ruggeri@self-loop.com
+	name = Ned Ruggeri
+[branch]
+	autosetuprebase = always
+[rerere]
+	enabled = 1
+[alias]
+	llog = log --graph --decorate

@@ -1,0 +1,38 @@
+# local settings
+. ~/.bashrc-local-pre
+
+PATH=$PATH:/opt/local/bin/:~/scripts:~/scripts/local
+
+export PS1="\w$ "
+export EDITOR=emacs
+export HISTSIZE=50000
+
+alias e='emacs'
+if [ -n "$LS" ]
+then
+    alias ls='$LS --color=auto'
+else
+    alias ls='ls --color=auto'
+fi
+alias l='ls'
+
+alias fname='find . -name'
+
+source $CONF_DIR/git/git-completion.bash
+alias gadd='git add'
+alias gcheck='git diff --cached'
+alias gcommit='git commit'
+alias gdiff='git diff'
+alias gllog='git llog'
+alias gpush='git push'
+alias grebase='git rebase'
+alias greset='git reset'
+alias gshow='git show'
+alias gstatus='git status'
+
+alias h='ssh hilbert.mtv.corp.google.com'
+
+eval `dircolors $CONF_DIR/solarized/dircolors.256dark`
+
+# local overrides
+. ~/.bashrc-local-post
