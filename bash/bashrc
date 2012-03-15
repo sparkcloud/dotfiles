@@ -28,6 +28,7 @@ alias gpush='git push'
 alias grebase='git rebase'
 alias greset='git reset'
 alias gshow='git show'
+alias gstash='git stash'
 alias gstatus='git status'
 
 alias h='ssh hilbert.mtv.corp.google.com'
