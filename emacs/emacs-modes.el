@@ -8,6 +8,8 @@
 (require 'ruby-mode)
 (setq auto-mode-alist
       (cons '("\\.rb" . ruby-mode) auto-mode-alist))
+(require 'scss-mode)
+(setq css-indent-offset 2)
 
 (require 'paredit)
 (add-hook 'clojure-mode-hook
