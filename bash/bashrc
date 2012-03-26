@@ -7,6 +7,9 @@ export PS1="\w$ "
 export EDITOR=emacs
 export HISTSIZE=50000
 
+# update bash history after each command
+export PROMPT_COMMAND="history -a"
+
 alias e='emacs'
 if [ -n "$LS" ]
 then
