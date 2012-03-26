@@ -9,6 +9,7 @@ alias gtags="/home/build/nonconf/google3/tools/tags/gtags.sh"
 alias iwyu='/google/src/head/depot/google3/devtools/maintenance/include_what_you_use/iwyu.py'
 
 alias fscat='fileutil cat'
+alias fscp='fileutil cp'
 alias fsdu='fileutil du -h'
 alias fsls='fileutil ls --sharded'
 alias fsmkdir='fileutil mkdir'
