@@ -1,7 +1,7 @@
 # local settings
 . ~/.bashrc-local-pre
 
-PATH=$PATH:/opt/local/bin/:~/scripts:~/scripts/local
+PATH=~/scripts:~/scripts/local:$PATH:/opt/local/bin/
 
 export PS1="\w$ "
 export EDITOR=emacs
