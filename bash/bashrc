@@ -19,8 +19,6 @@ else
 fi
 alias l='ls'
 
-alias fname='find . -name'
-
 source $CONF_DIR/git/git-completion.bash
 alias gadd='git add'
 alias gcheck='git diff --cached'
