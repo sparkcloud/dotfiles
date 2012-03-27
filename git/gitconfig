@@ -10,6 +10,6 @@
 [rerere]
 	enabled = 1
 [alias]
-	llog = log --graph --decorate
+	llog = log --graph --decorate --name-status
 [push]
 	default = upstream
