@@ -2740,6 +2740,13 @@ _gadd ()
 }
 _install_alias gadd
 
+_gbranch ()
+{
+    local GIT_WORDS=("git" "branch" )
+    _galias
+}
+_install_alias gbranch
+
 _gcheck ()
 {
     local GIT_WORDS=( "git" "check" )
