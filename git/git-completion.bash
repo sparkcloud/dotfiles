@@ -2720,6 +2720,124 @@ _gitk ()
 	__git_complete_revlist
 }
 
+_galias ()
+{
+    unset COMP_WORDS[0]
+    COMP_WORDS=( ${GIT_WORDS[@]} ${COMP_WORDS[@]} )
+    COMP_CWORD=$(( COMP_CWORD + 1 ))
+    _git
+}
+
+_install_alias ()
+{
+    complete -o bashdefault -o default -o nospace -F _$1 $1
+}
+
+_gadd ()
+{
+    local GIT_WORDS=( "git" "add" )
+    _galias
+}
+_install_alias gadd
+
+_gcheck ()
+{
+    local GIT_WORDS=( "git" "check" )
+    _galias
+}
+_install_alias gcheck
+
+_gcommit ()
+{
+    local GIT_WORDS=( "git" "commit" )
+    _galias
+}
+_install_alias gcommit
+
+_gdiff ()
+{
+    local GIT_WORDS=( "git" "diff" )
+    _galias
+}
+_install_alias gdiff
+
+_gfetch ()
+{
+    local GIT_WORDS=( "git" "fetch" )
+    _galias
+}
+_install_alias gfetch
+
+_gllog ()
+{
+    local GIT_WORDS=( "git" "llog" )
+    _galias
+}
+_install_alias gllog
+
+_gpull ()
+{
+    local GIT_WORDS=( "git" "pull" )
+    _galias
+}
+_install_alias gpull
+
+_gpush ()
+{
+    local GIT_WORDS=( "git" "push" )
+    _galias
+}
+_install_alias gpush
+
+_grebase ()
+{
+    local GIT_WORDS=( "git" "rebase" )
+    _galias
+}
+_install_alias grebase
+
+_greset ()
+{
+    local GIT_WORDS=( "git" "reset" )
+    _galias
+}
+_install_alias greset
+
+_gshow ()
+{
+    local GIT_WORDS=( "git" "show" )
+    _galias
+}
+_install_alias gshow
+
+_greset ()
+{
+    local GIT_WORDS=( "git" "reset" )
+    _galias
+}
+_install_alias greset
+
+_gshow ()
+{
+    local GIT_WORDS=( "git" "stash" )
+    _galias
+}
+_install_alias gshow
+
+_gstash ()
+{
+    local GIT_WORDS=( "git" "stash" )
+    _galias
+}
+_install_alias gstash
+
+_gstatus ()
+{
+    local GIT_WORDS=( "git" "status" )
+    _galias
+}
+_install_alias gstatus
+
 complete -o bashdefault -o default -o nospace -F _git git 2>/dev/null \
 	|| complete -o default -o nospace -F _git git
 complete -o bashdefault -o default -o nospace -F _gitk gitk 2>/dev/null \
