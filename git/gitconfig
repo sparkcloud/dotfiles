@@ -11,5 +11,6 @@
 	enabled = 1
 [alias]
 	llog = log --graph --decorate --name-status
+	check = diff --cached
 [push]
 	default = upstream
