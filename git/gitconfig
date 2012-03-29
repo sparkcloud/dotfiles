@@ -10,7 +10,7 @@
 [rerere]
 	enabled = 1
 [alias]
-	llog = log --graph --decorate --name-status
+	llog = log --graph --decorate --name-status --all
 	check = diff --cached
 [push]
 	default = upstream
