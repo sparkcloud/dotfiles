@@ -2782,6 +2782,13 @@ _gllog ()
 }
 _install_alias gllog
 
+_gmerge ()
+{
+    local GIT_WORDS=( "git" "merge" )
+    _galias
+}
+_install_alias gmerge
+
 _gpull ()
 {
     local GIT_WORDS=( "git" "pull" )
