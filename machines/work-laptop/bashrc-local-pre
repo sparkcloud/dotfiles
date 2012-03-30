@@ -1,4 +1,1 @@
-export CONF_DIR=~/.conf-files
-
-alias dircolors=gdircolors
-export LS=gls
+../laptop/bashrc-local-pre
