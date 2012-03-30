@@ -38,7 +38,12 @@ alias gstatus='git status'
 
 alias h='ssh hilbert.mtv.corp.google.com'
 
-eval `dircolors $CONF_DIR/solarized/dircolors.256dark`
+if [ -z "$DIRCOLORS" ]
+then
+   DIRCOLORS=dircolors
+fi
+
+eval `$DIRCOLORS $CONF_DIR/solarized/dircolors.256dark`
 
 # local overrides
 . ~/.bashrc-local-post
