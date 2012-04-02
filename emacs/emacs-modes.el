@@ -11,6 +11,9 @@
 (require 'scss-mode)
 (setq css-indent-offset 2)
 
+;; cpp private/public should be indented
+(c-set-offset 'access-label -1)
+
 (require 'paredit)
 (add-hook 'clojure-mode-hook
 	  (lambda () (paredit-mode +1)))
