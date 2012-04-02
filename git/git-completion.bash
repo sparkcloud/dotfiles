@@ -2775,6 +2775,13 @@ _gfetch ()
 }
 _install_alias gfetch
 
+_ggrep ()
+{
+    local GIT_WORDS=( "git" "grep" )
+    _galias
+}
+_install_alias ggrep
+
 _gllog ()
 {
     local GIT_WORDS=( "git" "llog" )
