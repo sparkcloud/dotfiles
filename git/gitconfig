@@ -2,6 +2,7 @@
 	diff = auto
 	status = auto
 	branch = auto
+	grep = auto
 [user]
 	email = ruggeri@self-loop.com
 	name = Ned Ruggeri
