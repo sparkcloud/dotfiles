@@ -4,3 +4,4 @@ export CONF_DIR=~/.conf-files
 
 export DIRCOLORS=gdircolors
 export LS=gls
+export XARGS=gxargs

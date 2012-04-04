@@ -12,12 +12,7 @@ export HISTSIZE=50000
 export PROMPT_COMMAND="history -a"
 
 alias e='emacs'
-if [ -n "$LS" ]
-then
-    alias ls='$LS --color=auto'
-else
-    alias ls='ls --color=auto'
-fi
+alias ls='$LS --color=auto'
 alias l='ls'
 
 source $CONF_DIR/git/git-aliases.bash
@@ -26,11 +21,6 @@ source $CONF_DIR/git/git-completion.bash
 source ~/scripts/kiki/register-kcd
 
 alias h='ssh hilbert.mtv.corp.google.com'
-
-if [ -z "$DIRCOLORS" ]
-then
-   DIRCOLORS=dircolors
-fi
 
 eval `$DIRCOLORS $CONF_DIR/solarized/dircolors.256dark`
 
