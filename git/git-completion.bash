@@ -2817,6 +2817,14 @@ _grebase ()
 }
 _install_alias grebase
 
+_gremote ()
+{
+    local GIT_WORDS=( "git" "remote" )
+    _galias
+}
+_install_alias gremote
+
+
 _greset ()
 {
     local GIT_WORDS=( "git" "reset" )
