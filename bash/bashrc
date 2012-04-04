@@ -23,6 +23,8 @@ alias l='ls'
 source $CONF_DIR/git/git-aliases.bash
 source $CONF_DIR/git/git-completion.bash
 
+source ~/scripts/kiki/register-kcd
+
 alias h='ssh hilbert.mtv.corp.google.com'
 
 if [ -z "$DIRCOLORS" ]
