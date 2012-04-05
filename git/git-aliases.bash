@@ -1,6 +1,7 @@
 alias gadd='git add'
 alias gbranch='git branch'
 alias gcheck='git check'
+alias gco='git co'
 alias gcommit='git commit'
 alias gdiff='git diff'
 alias gfetch='git fetch'

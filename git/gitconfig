@@ -13,5 +13,6 @@
 [alias]
 	llog = log --graph --decorate --name-status --all
 	check = diff --cached
+	co = checkout
 [push]
 	default = upstream

@@ -2754,6 +2754,13 @@ _gcheck ()
 }
 _install_alias gcheck
 
+_gco ()
+{
+    local GIT_WORDS=( "git" "co" )
+    _galias
+}
+_install_alias gco
+
 _gcommit ()
 {
     local GIT_WORDS=( "git" "commit" )
