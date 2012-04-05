@@ -1,7 +1,0 @@
-#!/bin/sh
-
-export CONF_DIR=~/.conf-files
-
-export DIRCOLORS=dircolors
-export LS=ls
-export XARGS=xargs

@@ -5,3 +5,5 @@ export CONF_DIR=~/.conf-files
 export DIRCOLORS=gdircolors
 export LS=gls
 export XARGS=gxargs
+
+. $CONF_DIR/bash/bashrc-base
