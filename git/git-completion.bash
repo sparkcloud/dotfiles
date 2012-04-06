@@ -2782,6 +2782,13 @@ _gfetch ()
 }
 _install_alias gfetch
 
+_gfix ()
+{
+    local GIT_WORDS=( "git" "fix" )
+    _galias
+}
+_install_alias gfix
+
 _ggrep ()
 {
     local GIT_WORDS=( "git" "grep" )

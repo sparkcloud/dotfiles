@@ -14,5 +14,6 @@
 	llog = log --graph --decorate --name-status --all
 	check = diff --cached
 	co = checkout
+	fix = commit --am
 [push]
 	default = upstream
