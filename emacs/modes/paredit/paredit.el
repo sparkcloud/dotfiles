@@ -1400,7 +1400,7 @@ With a `C-u' prefix argument, just do the standard `kill-line'.
 With a numeric prefix argument N, do `kill-line' that many times."
   (interactive "P")
   (cond (argument
-         (kill-line (if (integerp argument) argument 1)))
+         (kill-and-join-forward (if (integerp argument) argument 1)))
         ((paredit-in-string-p)
          (paredit-kill-line-in-string))
         ((paredit-in-comment-p)
@@ -1410,13 +1410,13 @@ With a numeric prefix argument N, do `kill-line' that many times."
          ;** Be careful about trailing backslashes.
          (if (paredit-in-char-p)
              (backward-char))
-         (kill-line))
+         (kill-and-join-forward))
         (t (paredit-kill-sexps-on-line))))
 
 (defun paredit-kill-line-in-string ()
   (if (save-excursion (paredit-skip-whitespace t (point-at-eol))
                       (eolp))
-      (kill-line)
+      (kill-and-join-forward)
     (save-excursion
       ;; Be careful not to split an escape sequence.
       (if (paredit-in-string-escape-p)
@@ -1432,7 +1432,7 @@ With a numeric prefix argument N, do `kill-line' that many times."
   ;; comment, and hence not at the beginning of the line.
   (if (eolp)
       (paredit-forward-delete-in-comment)
-      (kill-line)))
+      (kill-and-join-forward)))
 
 (defun paredit-kill-sexps-on-line ()
   (if (paredit-in-char-p)               ; Move past the \ and prefix.
