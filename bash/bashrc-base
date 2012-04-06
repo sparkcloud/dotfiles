@@ -21,5 +21,6 @@ source $CONF_DIR/git/git-completion.bash
 source ~/scripts/kiki/register-kcd
 
 alias h='ssh hilbert.mtv.corp.google.com'
+alias s='ssh dirichlet.i'
 
 eval `$DIRCOLORS $CONF_DIR/solarized/dircolors.256dark`
