@@ -9,6 +9,10 @@
 (add-hook 'lisp-mode-hook
 	  '(lambda ()
 	     (local-set-key (kbd "RET") 'newline-and-indent)))
+(add-hook 'lisp-mode-hook
+          '(lambda ()
+             (set (make-local-variable lisp-indent-function)
+                  'common-lisp-indent-function)))
 (require 'markdown-mode)
 (setq auto-mode-alist
       (cons '("\\.md" . markdown-mode) auto-mode-alist))
