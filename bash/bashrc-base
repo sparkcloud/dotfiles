@@ -12,6 +12,9 @@ alias e='emacs'
 alias ls='$LS --color=auto'
 alias l='ls'
 
+# pipe down clisp banner!
+alias clisp='clisp -q'
+
 source $CONF_DIR/git/git-aliases.bash
 source $CONF_DIR/git/git-completion.bash
 

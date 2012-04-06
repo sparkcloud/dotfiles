@@ -2,6 +2,10 @@
 
 (require 'clojure-mode)
 (require 'go-mode)
+(setq auto-mode-alist
+      (cons '("\\.cl$" . lisp-mode) auto-mode-alist))
+(add-hook 'lisp-mode-hook
+	  (lambda () (paredit-mode +1)))
 (require 'markdown-mode)
 (setq auto-mode-alist
       (cons '("\\.md" . markdown-mode) auto-mode-alist))
