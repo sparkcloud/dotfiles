@@ -12,6 +12,7 @@
 	enabled = 1
 [alias]
 	llog = log --graph --decorate --name-status --all
+	logp = log --graph --decorate -p --all
 	check = diff --cached
 	co = checkout
 	fix = commit --am

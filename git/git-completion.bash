@@ -2796,12 +2796,20 @@ _ggrep ()
 }
 _install_alias ggrep
 
-_gllog ()
+_glog ()
 {
     local GIT_WORDS=( "git" "llog" )
     _galias
 }
-_install_alias gllog
+_install_alias glog
+
+
+_glogp ()
+{
+    local GIT_WORDS=( "git" "logp" )
+    _galias
+}
+_install_alias glogp
 
 _gmerge ()
 {
