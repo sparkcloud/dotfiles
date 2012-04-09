@@ -12,6 +12,8 @@ alias e='emacs'
 alias ls='$LS --color=auto'
 alias l='ls'
 
+alias w='which'
+
 # pipe down clisp banner!
 alias clisp='clisp -q'
 
