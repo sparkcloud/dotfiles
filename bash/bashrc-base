@@ -20,6 +20,8 @@ alias clisp='clisp -q'
 source $CONF_DIR/git/git-aliases.bash
 source $CONF_DIR/git/git-completion.bash
 
+source $CONF_DIR/rails-completion.bash
+
 source ~/scripts/kiki/register-kcd
 
 alias h='ssh hilbert.mtv.corp.google.com'
