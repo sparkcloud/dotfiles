@@ -3,7 +3,10 @@ PATH=$SCRIPT_PATH:$PATH:/opt/local/bin/
 
 export PS1="\w$ "
 export EDITOR=emacs
-export HISTSIZE=50000
+
+MILLION=1000000
+export HISTFILESIZE=$MILLION
+export HISTSIZE=$MILLION
 
 # update bash history after each command
 export PROMPT_COMMAND="history -a"
