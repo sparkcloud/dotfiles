@@ -2,7 +2,7 @@ SCRIPT_PATH=~/scripts:~/scripts/kiki:~/scripts/local
 PATH=$SCRIPT_PATH:$PATH:/opt/local/bin/
 
 export PS1="\w$ "
-export EDITOR="emacsclient-23.4 -a '' -t"
+export EDITOR=$EMACS
 
 MILLION=1000000
 export HISTFILESIZE=$MILLION
@@ -11,7 +11,7 @@ export HISTSIZE=$MILLION
 # update bash history after each command
 export PROMPT_COMMAND="history -a"
 
-alias e=$EDITOR
+alias e=$EMACS
 alias ls='$LS --color=auto'
 alias l='ls'
 

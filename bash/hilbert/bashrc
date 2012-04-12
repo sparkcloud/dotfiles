@@ -3,6 +3,7 @@
 export CONF_DIR=~/.conf-files
 
 export DIRCOLORS=dircolors
+export EMACS="emacsclient -a '' -t"
 export LS=ls
 export XARGS=xargs
 
