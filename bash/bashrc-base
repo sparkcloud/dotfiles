@@ -1,4 +1,5 @@
-SCRIPT_PATH=~/scripts:~/scripts/kiki:~/scripts/local
+SCRIPT_DIR=~/scripts
+SCRIPT_PATH=$SCRIPT_DIR:$SCRIPT_DIR/kiki:$SCRIPT_DIR/local
 PATH=$SCRIPT_PATH:$PATH:/opt/local/bin/
 
 export PS1="\w$ "
@@ -25,7 +26,7 @@ source $CONF_DIR/git/git-completion.bash
 
 source $CONF_DIR/rails-completion.bash
 
-source ~/scripts/kiki/register-kcd
+source $SCRIPT_DIR/kiki/register-kcd
 
 alias h='ssh hilbert.mtv.corp.google.com'
 alias s='ssh dirichlet.i'
