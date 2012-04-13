@@ -26,6 +26,7 @@ source $CONF_DIR/git/git-completion.bash
 
 source $CONF_DIR/rails-completion.bash
 
+source $SCRIPT_DIR/register-gd
 source $SCRIPT_DIR/kiki/register-kcd
 
 alias h='ssh hilbert.mtv.corp.google.com'
