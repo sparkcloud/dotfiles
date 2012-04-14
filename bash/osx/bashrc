@@ -3,7 +3,7 @@
 export CONF_DIR=~/.conf-files
 
 export DIRCOLORS=gdircolors
-export EMACS="emacsclient-23.4 -a '' -t"
+export EMACS="emacsclient-24.1 -a '' -t"
 export LS=gls
 export XARGS=gxargs
 
