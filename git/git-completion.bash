@@ -2846,13 +2846,19 @@ _gremote ()
 }
 _install_alias gremote
 
-
 _greset ()
 {
     local GIT_WORDS=( "git" "reset" )
     _galias
 }
 _install_alias greset
+
+_grework ()
+{
+    local GIT_WORDS=( "git" "rework" )
+    _galias
+}
+_install_alias grework
 
 _gshow ()
 {

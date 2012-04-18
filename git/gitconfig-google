@@ -16,5 +16,6 @@
 	check = diff --cached
 	co = checkout
 	fix = commit --am
+	rework = rebase --interactive HEAD~10
 [push]
 	default = upstream
