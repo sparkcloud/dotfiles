@@ -26,5 +26,6 @@
 (global-set-key "\C-k" 'kill-and-join-forward)
 
 (global-set-key (kbd "C-c C-r") 'replace-regexp)
+(global-set-key (kbd "C-c M-r") 'query-replace-regexp)
 
 (provide 'emacs-binds)
