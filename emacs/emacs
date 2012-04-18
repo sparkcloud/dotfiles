@@ -1,3 +1,5 @@
-(load-file "$CONF_DIR/emacs/emacs-modes.el")
-(load-file "$CONF_DIR/emacs/emacs-options.el")
-(load-file "$CONF_DIR/emacs/emacs-binds.el")
+(add-to-list 'load-path (substitute-in-file-name "$CONF_DIR/emacs"))
+
+(require 'emacs-modes)
+(require 'emacs-options)
+(require 'emacs-binds)

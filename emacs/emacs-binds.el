@@ -24,3 +24,5 @@
     (kill-line arg)))
 
 (global-set-key "\C-k" 'kill-and-join-forward)
+
+(provide 'emacs-binds)

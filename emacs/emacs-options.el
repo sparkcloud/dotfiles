@@ -18,3 +18,5 @@
 (require 'color-theme-solarized)
 ;; TODO: need to set terminal colors?
 ;; (color-theme-solarized-dark)
+
+(provide 'emacs-options)
