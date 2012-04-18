@@ -19,4 +19,6 @@
 ;; TODO: need to set terminal colors?
 ;; (color-theme-solarized-dark)
 
+(require 'unbound)
+
 (provide 'emacs-options)
