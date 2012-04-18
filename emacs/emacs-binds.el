@@ -28,4 +28,6 @@
 (global-set-key (kbd "C-c C-r") 'replace-regexp)
 (global-set-key (kbd "C-c M-r") 'query-replace-regexp)
 
+(global-set-key (kbd "C-x y") 'split-window-horizontally)
+
 (provide 'emacs-binds)
