@@ -1,3 +1,4 @@
+(load-file "$CONF_DIR/emacs/unbound.el") ;; super-hack
 (load-file "$CONF_DIR/emacs/emacs-options.el")
 (load-file "$CONF_DIR/emacs/emacs-binds.el")
 
