@@ -22,11 +22,16 @@
 	     (backward-char 1)
 	     (kill-line arg))
     (kill-line arg)))
-
 (global-set-key "\C-k" 'kill-and-join-forward)
 
 (global-set-key (kbd "C-c C-r") 'replace-regexp)
 (global-set-key (kbd "C-c M-r") 'query-replace-regexp)
+
+(defun list-buffers-and-switch (arg)
+  (interactive "p")
+  (list-buffers)
+  (other-window 1))
+(global-set-key (kbd "C-x C-b") 'list-buffers-and-switch)
 
 (global-set-key (kbd "C-x w") 'delete-window)
 
