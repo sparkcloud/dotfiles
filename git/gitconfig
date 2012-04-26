@@ -17,5 +17,7 @@
 	co = checkout
 	fix = commit --am
 	rework = rebase --interactive HEAD~10
+  wcheck = diff --cached --color-words
+  wdiff = diff --color-words
 [push]
 	default = upstream

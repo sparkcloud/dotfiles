@@ -2895,6 +2895,20 @@ _gstatus ()
 }
 _install_alias gstatus
 
+_gwcheck ()
+{
+    local GIT_WORDS=( "git" "wcheck" )
+    _galias
+}
+_install_alias gwcheck
+
+_gwdiff ()
+{
+    local GIT_WORDS=( "git" "wdiff" )
+    _galias
+}
+_install_alias gwdiff
+
 complete -o bashdefault -o default -o nospace -F _git git 2>/dev/null \
 	|| complete -o default -o nospace -F _git git
 complete -o bashdefault -o default -o nospace -F _gitk gitk 2>/dev/null \
