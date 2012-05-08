@@ -35,4 +35,12 @@
 	    (setq c-comment-start-regexp "(@|/(/|[*][*]?))")
 	    (modify-syntax-entry ?@ "< b" java-mode-syntax-table)))
 
+;; I think I always like subword-mode
+(mapcar (lambda (mode) (add-hook mode (lambda () (subword-mode t))))
+	(list 'c-mode-hook
+	      'c++-mode-hook
+	      'js-mode-hook
+	      'python-mode-hook
+	      'ruby-mode-hook))
+
 (provide 'emacs-modes)
