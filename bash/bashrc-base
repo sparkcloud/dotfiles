@@ -30,6 +30,8 @@ source $CONF_DIR/rails-completion.bash
 alias gd='. $SCRIPT_DIR/gd'
 alias kcd='. $SCRIPT_DIR/kiki/kcd'
 alias op='cd $OLDPWD'
+alias up='cd ..'
+alias up2='cd .. && cd ..'
 
 alias h='ssh hilbert.mtv.corp.google.com'
 alias s='ssh dirichlet.i'
