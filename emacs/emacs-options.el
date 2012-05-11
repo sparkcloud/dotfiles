@@ -5,7 +5,8 @@
       `((".*" ,"~/.emacs.d/saves/" t)))
 ;; fuck you, vc-git
 (setq vc-handled-backends ())
-
+;; just say fuck no to tabs
+(setq-default indent-tabs-mode nil)
 ;; no menu bar please
 (menu-bar-mode -1)
 
