@@ -752,7 +752,8 @@ If such a comment exists, delete the comment (including all leading
             (newline))
         (insert close)
         (if (paredit-space-for-delimiter-p t close)
-            (insert " "))))))
+;            (insert " ")
+	  )))))
 
 ;++ This needs a better name...
 
