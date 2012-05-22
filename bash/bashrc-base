@@ -27,11 +27,14 @@ source $CONF_DIR/git/git-completion.bash
 
 source $CONF_DIR/rails-completion.bash
 
+source $SCRIPT_DIR/checked-cd
+
+alias cd='checked-cd'
 alias gd='. $SCRIPT_DIR/gd'
 alias kcd='. $SCRIPT_DIR/kiki/kcd'
 alias op='cd $OLDPWD'
-alias up='cd ..'
-alias up2='cd .. && cd ..'
+alias up='cd .. UP_TOKEN'
+alias up2='up && up'
 
 alias h='ssh hilbert.mtv.corp.google.com'
 alias s='ssh dirichlet.i'
