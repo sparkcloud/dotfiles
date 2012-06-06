@@ -1,23 +1,23 @@
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	grep = auto
+    diff = auto
+    status = auto
+    branch = auto
+    grep = auto
 [user]
-	email = ruggeri@self-loop.com
-	name = Ned Ruggeri
+    email = ruggeri@self-loop.com
+    name = Ned Ruggeri
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 [rerere]
-	enabled = 1
+    enabled = 1
 [alias]
-	llog = log --graph --decorate --name-status --all
-	logp = log --graph --decorate -p --all
-	check = diff --cached
-	co = checkout
-	fix = commit --am
-	rework = rebase --interactive HEAD~10
-  wcheck = diff --cached --color-words
-  wdiff = diff --color-words
+    llog = log --graph --decorate --name-status --all
+    logp = log --graph --decorate -p --all
+    check = diff --cached
+    co = checkout
+    fix = commit --am
+    rework = rebase --interactive HEAD~10
+    wcheck = diff --cached --color-words
+    wdiff = diff --color-words
 [push]
-	default = upstream
+    default = upstream
