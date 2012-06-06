@@ -19,5 +19,6 @@
     rework = rebase --interactive HEAD~10
     wcheck = diff --cached --color-words
     wdiff = diff --color-words
+    wshow = show --color-words
 [push]
     default = upstream

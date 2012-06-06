@@ -2888,6 +2888,13 @@ _gwdiff ()
 }
 _install_alias gwdiff
 
+_gwshow ()
+{
+    local GIT_WORDS=( "git" "wshow" )
+    _galias
+}
+_install_alias gwshow
+
 complete -o bashdefault -o default -o nospace -F _git git 2>/dev/null \
 	|| complete -o default -o nospace -F _git git
 complete -o bashdefault -o default -o nospace -F _gitk gitk 2>/dev/null \
