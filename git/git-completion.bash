@@ -2853,13 +2853,6 @@ _greset ()
 }
 _install_alias greset
 
-_gshow ()
-{
-    local GIT_WORDS=( "git" "stash" )
-    _galias
-}
-_install_alias gshow
-
 _gstash ()
 {
     local GIT_WORDS=( "git" "stash" )
