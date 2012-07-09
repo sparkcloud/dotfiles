@@ -22,6 +22,8 @@
 (require 'scss-mode)
 (setq css-indent-offset 2)
 
+(setq js-indent-level 2)
+
 ;; cpp private/public should be indented
 (c-set-offset 'access-label -1)
 
