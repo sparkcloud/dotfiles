@@ -27,9 +27,6 @@ source $CONF_DIR/git/git-completion.bash
 
 source $CONF_DIR/rails-completion.bash
 
-source $SCRIPT_DIR/checked-cd
-
-alias cd='checked-cd'
 alias gd='. $SCRIPT_DIR/gd'
 alias kcd='. $SCRIPT_DIR/kiki/kcd'
 alias op='cd $OLDPWD'
