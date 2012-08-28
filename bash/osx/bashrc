@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export CONF_DIR=~/.conf-files
+export CONF_DIR=~/.dotfiles
 
 export DIRCOLORS=gdircolors
 export EMACS="emacsclient -a '' -t"
