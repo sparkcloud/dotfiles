@@ -2,11 +2,13 @@
 
 export CONF_DIR=~/.dotfiles
 
+export MPORTS_DIR=/opt/local/bin
+
 export DIRCOLORS=gdircolors
-export EMACS="emacsclient -a '' -t"
+export EMACS='/opt/local/bin/emacsclient -a 'start-emacs-server' -t'
 export LS=gls
 export XARGS=gxargs
 
 # prefer macports stuff
-PATH=/opt/local/bin/:$PATH
+PATH=$MPORTS_DIR:$PATH
 . $CONF_DIR/bash/bashrc-base
