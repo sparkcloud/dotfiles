@@ -7,4 +7,6 @@ export EMACS="emacsclient -a '' -t"
 export LS=gls
 export XARGS=gxargs
 
+# prefer macports stuff
+PATH=/opt/local/bin/:$PATH
 . $CONF_DIR/bash/bashrc-base

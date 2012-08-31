@@ -1,6 +1,6 @@
 SCRIPT_DIR=~/scripts
 SCRIPT_PATH=$SCRIPT_DIR:$SCRIPT_DIR/kiki:$SCRIPT_DIR/local
-PATH=$SCRIPT_PATH:$PATH:/opt/local/bin/
+PATH=$SCRIPT_PATH:$PATH
 
 PROMPT_COLOR='\e[00m\e[38;05;166m'
 export PS1='\['$PROMPT_COLOR'\]\w\$\[\e[0m\] '
