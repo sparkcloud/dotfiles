@@ -33,7 +33,4 @@ alias op='cd $OLDPWD'
 alias up='cd .. UP_TOKEN'
 alias up2='up && up'
 
-alias h='ssh hilbert.mtv.corp.google.com'
-alias s='ssh dirichlet.i'
-
 eval `$DIRCOLORS $CONF_DIR/solarized/dircolors.256dark`
