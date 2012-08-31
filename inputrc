@@ -1,2 +1,5 @@
 "[A": history-search-backward
 "[B": history-search-forward
+
+# XCode's lldb completion is insane
+set disable-completions 'On'
