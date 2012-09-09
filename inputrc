@@ -2,4 +2,5 @@
 "[B": history-search-forward
 
 # XCode's lldb completion is insane
-set disable-completions 'On'
+# does this actually fix anything?
+set disable-completion 'On'
