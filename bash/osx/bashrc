@@ -12,3 +12,7 @@ export XARGS=gxargs
 # prefer macports stuff
 PATH=$MPORTS_DIR:$PATH
 . $CONF_DIR/bash/bashrc-base
+
+PATH=$PATH:$HOME/.rvm/bin
+source ~/.rvm/scripts/rvm
+source $rvm_path/scripts/completion
