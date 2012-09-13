@@ -22,3 +22,5 @@
     wshow = show --color-words
 [push]
     default = upstream
+[core]
+    excludesfile = ~/.gitignore
