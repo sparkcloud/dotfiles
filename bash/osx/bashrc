@@ -1,8 +1,8 @@
 #!/bin/sh
 
 export CONF_DIR=~/.dotfiles
-
 export MPORTS_DIR=/opt/local/bin
+export SCRIPT_DIR=~/.scripts
 
 export DIRCOLORS=gdircolors
 export EMACS='/opt/local/bin/emacsclient -a 'start-emacs-server' -t'
