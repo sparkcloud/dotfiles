@@ -4,5 +4,5 @@ if [ -n "$TMUX" ]
 then
   :
 else
-  scripts/enter-default-tmux
+  $SCRIPT_DIR/enter-default-tmux
 fi
