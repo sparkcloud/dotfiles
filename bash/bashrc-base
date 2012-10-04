@@ -16,7 +16,7 @@ alias e=$EMACS
 alias ls='$LS --color=auto'
 alias kgrep='git grep --no-index'
 # ABC: always be coloring
-alias less='less -R'
+alias less='less -R -S'
 alias l='ls'
 
 alias w='which'
