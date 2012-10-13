@@ -20,6 +20,10 @@
 ;; TODO: need to set terminal colors?
 ;; (color-theme-solarized-dark)
 
+;; OSX copying, go!
+(require 'pbcopy)
+(turn-on-pbcopy)
+
 (require 'unbound)
 
 (provide 'emacs-options)
