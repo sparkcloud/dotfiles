@@ -11,11 +11,11 @@
 [rerere]
     enabled = 1
 [alias]
-    llog = log --graph --decorate --name-status --all
-    logp = log --graph --decorate -p --all
     check = diff --cached
     co = checkout
     fix = commit --am
+    llog = log --graph --decorate --name-status
+    logp = log --graph --decorate -p
     rework = rebase --interactive HEAD~10
     wcheck = diff --cached --color-words
     wdiff = diff --color-words
