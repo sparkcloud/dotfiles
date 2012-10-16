@@ -15,7 +15,7 @@
     co = checkout
     fix = commit --am
     llog = log --graph --decorate --name-status
-    logp = log --graph --decorate -p
+    logp = log --graph --decorate -p --word-diff
     rework = rebase --interactive HEAD~10
     wcheck = diff --cached --color-words
     wdiff = diff --color-words
