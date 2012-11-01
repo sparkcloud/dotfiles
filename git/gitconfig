@@ -24,3 +24,4 @@
     default = upstream
 [core]
     excludesfile = ~/.gitignore
+    editor = ~/.scripts/emacs.sh
