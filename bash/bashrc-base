@@ -21,6 +21,9 @@ alias l='ls'
 
 alias w='which'
 
+# I never remember to prefer pry
+alias irb='pry'
+
 # pipe down clisp banner!
 alias clisp='clisp -q'
 
