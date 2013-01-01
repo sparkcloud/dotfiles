@@ -19,6 +19,7 @@
 (require 'ruby-mode)
 (setq auto-mode-alist
       (cons '("\\.rb" . ruby-mode) auto-mode-alist))
+(setq ruby-deep-indent-paren nil)
 (require 'scss-mode)
 (setq css-indent-offset 2)
 
