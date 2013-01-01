@@ -34,5 +34,9 @@
 (global-set-key (kbd "C-x C-b") 'list-buffers-and-switch)
 
 (global-set-key (kbd "C-x w") 'delete-window)
+(defun back-other-window (arg)
+  (interactive "p")
+  (other-window -1))
+(global-set-key (kbd "C-x O") 'back-other-window)
 
 (provide 'emacs-binds)
