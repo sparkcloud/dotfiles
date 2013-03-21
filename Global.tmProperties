@@ -11,5 +11,5 @@ tabSize          = 2
 
 # don't write long lines
 showWrapColumn   = true
-wrapColumn       = 80
+wrapColumn       = 78
 softWrap         = false
